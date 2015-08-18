@@ -14,8 +14,8 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css" />
 </head>
 <body>
-<h1>Title : ${title}</h1>
-<h1>Message : ${message}</h1>
+<h1>${title}</h1>
+<h1>${message}</h1>
 <c:url value="/j_spring_security_logout" var="logoutUrl" />
 
 <!-- csrt for log out-->
@@ -37,5 +37,8 @@
           href="javascript:formSubmit()"> Logout</a>
   </h2>
 </c:if>
+<table>
+    <tr><th>Data</th><th>Data</th><th>Data</th><th>Data</th></tr>
+</table>
 </body>
 </html>

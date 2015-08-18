@@ -13,16 +13,16 @@ public class HelloController {
 	public ModelAndView printWelcome() {
         ModelAndView model = new ModelAndView();
         model.addObject("message", "welcome page!");
-        model.setViewName("hello");
+        model.setViewName("login");
 		return model;
 	}
     @RequestMapping(value = "/admin**", method = RequestMethod.GET)
     public ModelAndView protectedPage() {
 
         ModelAndView model = new ModelAndView();
-        model.addObject("title", "Spring Security Project");
+        model.addObject("title", "Admin Dashboard");
         model.addObject("message", "This is protected page - Only for Administrators !");
-        model.setViewName("admin");
+        model.setViewName("dashboard");
         return model;
 
     }
