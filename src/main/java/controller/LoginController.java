@@ -1,4 +1,4 @@
-package com.springapp.mvc;
+package controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 
-public class HelloController {
+public class LoginController {
 	@RequestMapping(value = {"/", "/welcome"} ,method = RequestMethod.GET)
 	public ModelAndView printWelcome() {
         ModelAndView model = new ModelAndView();
@@ -38,6 +38,7 @@ public class HelloController {
         if (logout != null) {
             model.addObject("msg", "You've been logged out successfully.");
         }
+
         model.setViewName("login");
 
         return model;
